@@ -10,6 +10,7 @@
 	<%
 		String name = request.getParameter("name");
 	%>
-	<%=name%>
+	
+	<%=name  %>
 </body>
 </html>
