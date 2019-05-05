@@ -8,12 +8,10 @@
 </head>
 <body>
 
-	<form action="LogInServelet" method="get">
-		Enter User Name :<input type="text" name="name"><br> 
-		Enter Password :<input type="password" name="name"><br> 
-	
-		<input type="submit" value="login">
+	<form action="loginServelet" method="get">
+		Enter User Name :<input type="text" name="name"><br></br>
+		Enter Password :<input type="password" name="name"><br></br> <input
+			type="submit" value="login">
 	</form>
-
 </body>
 </html>
