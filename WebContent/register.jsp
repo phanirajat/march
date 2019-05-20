@@ -7,18 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="SignUpServelet" method="get">
+	<form action="Register" method="post">
 
+		Name:<input type="text" name="userName" /><br />
+		<br /> Password:<input type="password" name="userPass" /><br />
+		<br /> Email Id:<input type="text" name="userEmail" /><br />
+		<br /> Country: <select name="userCountry">
+			<option>India</option>
+			<option>Srilanka</option>
+			<option>other</option>
+		</select> <br />
+		<br />
+		 <input type="submit" value="register" />
 
-		User Name :<input type="text" name="name"><br></br>
-
-		<td>Enter Email : <input type="text" name="email"><br></br>
-		<td>Password :<input type="password" name="name"><br></br>
-		<td>ReEnterPass :<input type="password" name="name"><br></br>
-
-
-			<input type="submit" value="Register"><br></br>
 	</form>
-
+	
 </body>
 </html>
