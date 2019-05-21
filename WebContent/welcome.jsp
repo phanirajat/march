@@ -8,9 +8,16 @@
 </head>
 <body>
 	<%
-		String name = request.getParameter("name");
+	String name = (String)session.getAttribute("uname");
+	if(name != null){
 	%>
-	
-	<%=name  %>
+	<h1>
+	<%=name%>
+	</h1>
+    <%}
+	else 
+		request.getRequestDispatcher("\register.jsp").forward(request, response);
+    %>
+    
 </body>
 </html>

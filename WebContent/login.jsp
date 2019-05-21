@@ -8,9 +8,9 @@
 </head>
 <body>
 
-	<form action="loginServelet" method="get">
+	<form action="loginServelet" method="post">s
 		Enter User Name :<input type="text" name="name"><br></br>
-		Enter Password :<input type="password" name="name"><br></br> <input
+		Enter Password :<input type="password" name="password"><br></br> <input
 			type="submit" value="login">
 	</form>
 </body>
