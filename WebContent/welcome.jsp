@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+ <script>
+   $(document).click(function(){
+        if(typeof timeOutObj != "undefined") {
+            clearTimeout(timeOutObj);
+        }
+
+        timeOutObj = setTimeout(function(){ 
+            localStorage.clear();
+            window.location = "/";
+        }, 12);   //will expire after twenty minutes
+
+   });
+</script>
 	<%
 	String name = (String)session.getAttribute("uname");
 	if(name != null){
